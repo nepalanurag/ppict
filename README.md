@@ -132,7 +132,6 @@ Full report: [validation/results/REAL_DATA_REPORT.md](validation/results/REAL_DA
 
 | Piece | State |
 | --- | --- |
-| `PLAN.md` with paper-versus-prompt discrepancies | written |
 | Python package and command line | written |
 | Unit and end-to-end tests | 101 passing |
 | Null simulations with measured Type I error | run, see `validation/results/NULL_REPORT.md` |
@@ -256,7 +255,7 @@ its compiled [PDF](validation/results/sap_appendix.pdf).
 
 ### What the code deliberately does not do
 
-These are choices, not omissions, and each is recorded in `PLAN.md`:
+These are choices, not omissions:
 
 - It does not claim novel methodology. Adapting PPI and PPI++ to the two-arm trial
   average treatment effect, and the asymptotic equivalence to ANCOVA with the
@@ -314,9 +313,9 @@ Measured on this machine, and worth knowing because it affects how you read logs
 
 ## Paper versus prompt
 
-`PLAN.md` lists every place where the brief that commissioned this project
-disagrees with the primary literature or with the author's own published code, and
-what was done about each. The four that changed the design most:
+The brief that commissioned this project disagrees with the primary literature
+or with the author's own published code in several places. The four that changed
+the design most:
 
 1. The variance reduction is `rho^2 * N / (n + N)`. An earlier and plausible
    looking derivation gives `rho^2 * n / (n + N)`, which would mean an infinite
