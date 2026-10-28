@@ -8,6 +8,9 @@ behind a claim of variance reduction, and anyone who needs to check whether a
 prediction-powered analysis of a randomized trial actually holds its Type I error
 rate when the prognostic model is wrong.
 
+Read the measured results without running anything: [ppict evidence sheet](https://nepalanurag.github.io/ppict/).
+The page is static. The calculator remains a local tool.
+
 ## The one claim
 
 The single falsifiable claim this project exists to test:

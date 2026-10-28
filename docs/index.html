@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ppict: evidence sheet</title>
+  <meta name="description" content="Measured results for prediction-powered covariate adjustment in randomized trials: 22,400 null trials, ACTG 175, TCGA-BRCA, and a local calculator.">
+  <meta name="theme-color" content="#0f2b25">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to results</a>
+
+<header class="cover">
+  <div class="wrap cover-top">
+    <a class="wordmark" href="#main">ppict</a>
+    <p class="cover-meta">Evidence sheet / October 2026</p>
+    <a class="cover-link" href="https://github.com/nepalanurag/ppict">Source</a>
+  </div>
+
+  <div class="wrap cover-main">
+    <h1>The interval shrank.<br>The error rate held.</h1>
+    <p class="cover-sub">Prediction-powered covariate adjustment, measured in 22,400 null trials and on one real randomized trial split.</p>
+  </div>
+
+  <div class="wrap cover-figure">
+    <figure class="figure-scroll" tabindex="0">
+      <svg class="forest" viewBox="0 0 1100 300" role="img" aria-labelledby="forest-title forest-desc">
+        <title id="forest-title">ACTG 175 treatment effect estimates and 95 percent intervals</title>
+        <desc id="forest-desc">Unadjusted 65.73 CD4 cells, interval 40.22 to 91.24. L1 lasso 65.72, interval 45.53 to 85.90. Group-lasso PPI++ 66.89, interval 45.90 to 87.89.</desc>
+
+        <rect class="forest-primary-band" x="225" y="174" width="825" height="52"></rect>
+
+        <g class="forest-row">
+          <text class="forest-label" x="0" y="74">Unadjusted</text>
+          <line class="forest-rule" x1="240" x2="1050" y1="70" y2="70"></line>
+          <line class="forest-interval" x1="310.47" x2="999.24" y1="70" y2="70"></line>
+          <line class="forest-cap" x1="310.47" x2="310.47" y1="63" y2="77"></line>
+          <line class="forest-cap" x1="999.24" x2="999.24" y1="63" y2="77"></line>
+          <circle class="forest-point" cx="654.86" cy="70" r="4"></circle>
+          <text class="forest-value" x="1050" y="56" text-anchor="end">51.02 wide</text>
+        </g>
+
+        <g class="forest-row">
+          <text class="forest-label" x="0" y="139">L1 lasso</text>
+          <line class="forest-rule" x1="240" x2="1050" y1="135" y2="135"></line>
+          <line class="forest-interval" x1="382.16" x2="927.15" y1="135" y2="135"></line>
+          <line class="forest-cap" x1="382.16" x2="382.16" y1="128" y2="142"></line>
+          <line class="forest-cap" x1="927.15" x2="927.15" y1="128" y2="142"></line>
+          <circle class="forest-point" cx="654.72" cy="135" r="4"></circle>
+          <text class="forest-value" x="1050" y="121" text-anchor="end">40.37 wide</text>
+        </g>
+
+        <g class="forest-row">
+          <text class="forest-label forest-label-primary" x="0" y="204">Group-lasso PPI++</text>
+          <line class="forest-rule" x1="240" x2="1050" y1="200" y2="200"></line>
+          <line class="forest-interval forest-interval-primary" x1="387.15" x2="954.02" y1="200" y2="200"></line>
+          <line class="forest-cap forest-cap-primary" x1="387.15" x2="387.15" y1="193" y2="207"></line>
+          <line class="forest-cap forest-cap-primary" x1="954.02" x2="954.02" y1="193" y2="207"></line>
+          <circle class="forest-point forest-point-primary" cx="670.52" cy="200" r="5"></circle>
+          <text class="forest-value forest-value-primary" x="1050" y="186" text-anchor="end">41.99 wide</text>
+        </g>
+
+        <line class="forest-axis" x1="240" x2="1050" y1="250" y2="250"></line>
+        <g class="forest-tick">
+          <line x1="307.5" x2="307.5" y1="250" y2="256"></line>
+          <text x="307.5" y="276" text-anchor="middle">40</text>
+          <line x1="442.5" x2="442.5" y1="250" y2="256"></line>
+          <text x="442.5" y="276" text-anchor="middle">50</text>
+          <line x1="577.5" x2="577.5" y1="250" y2="256"></line>
+          <text x="577.5" y="276" text-anchor="middle">60</text>
+          <line x1="712.5" x2="712.5" y1="250" y2="256"></line>
+          <text x="712.5" y="276" text-anchor="middle">70</text>
+          <line x1="847.5" x2="847.5" y1="250" y2="256"></line>
+          <text x="847.5" y="276" text-anchor="middle">80</text>
+          <line x1="982.5" x2="982.5" y1="250" y2="256"></line>
+          <text x="982.5" y="276" text-anchor="middle">90</text>
+        </g>
+      </svg>
+      <figcaption>ACTG 175, CD4 cells at week 20. 527 patients in the analysis half. Bars are 95% intervals. One stratified split.</figcaption>
+    </figure>
+
+    <div class="cover-stats" aria-label="Results at a glance">
+      <div class="cover-stat">
+        <span class="stat">17.7%</span>
+        <span class="stat-label">narrower than unadjusted</span>
+      </div>
+      <div class="cover-stat">
+        <span class="stat">24 / 24</span>
+        <span class="stat-label">null cells held alpha</span>
+      </div>
+      <div class="cover-stat">
+        <span class="stat">0.0</span>
+        <span class="stat-label">app, CLI, API difference</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="wrap section method-section" aria-labelledby="method-title">
+    <div class="section-head">
+      <h2 id="method-title">What it does</h2>
+      <p class="section-note">One estimator. Four ways to run it.</p>
+    </div>
+
+    <ol class="steps">
+      <li>
+        <span class="step-number">1</span>
+        <h3>Hold out the score</h3>
+        <p>The prognostic score trains on patients outside the analysis half.</p>
+      </li>
+      <li>
+        <span class="step-number">2</span>
+        <h3>Select groups</h3>
+        <p>Permutation-assisted group lasso, calibrated against a null.</p>
+      </li>
+      <li>
+        <span class="step-number">3</span>
+        <h3>Tune one value</h3>
+        <p>PPI++ estimates a single tuning scalar from labeled data.</p>
+      </li>
+      <li>
+        <span class="step-number">4</span>
+        <h3>Report</h3>
+        <p>Effect, interval, design projection and SAP appendix.</p>
+      </li>
+    </ol>
+
+    <p class="implementation">Python package <span>/</span> CLI <span>/</span> R package <span>/</span> calculator</p>
+  </section>
+
+  <section class="wrap section" aria-labelledby="null-title">
+    <div class="section-head">
+      <h2 id="null-title">Null sweep</h2>
+      <p class="section-note">8 scenarios. 400 trials each. True effect zero.</p>
+    </div>
+
+    <div class="split">
+      <div class="table-wrap">
+        <table class="matrix">
+          <caption class="visually-hidden">Rejection rate at alpha 0.05 for each scenario and method</caption>
+          <thead>
+            <tr>
+              <th scope="col">Scenario</th>
+              <th scope="col">Unadjusted</th>
+              <th scope="col">PPI++ single</th>
+              <th scope="col">L1 lasso</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Good score</th>
+              <td class="rate" style="--r:.45">4.50</td>
+              <td class="rate" style="--r:.45">4.50</td>
+              <td class="rate rate-l1" style="--r:.60">6.00</td>
+            </tr>
+            <tr>
+              <th scope="row">Weak score</th>
+              <td class="rate" style="--r:.50">5.00</td>
+              <td class="rate" style="--r:.425">4.25</td>
+              <td class="rate rate-l1" style="--r:.575">5.75</td>
+            </tr>
+            <tr>
+              <th scope="row">Poorly estimated</th>
+              <td class="rate" style="--r:.625">6.25</td>
+              <td class="rate rate-watch" style="--r:.675">6.75</td>
+              <td class="rate rate-inflated" style="--r:.875">8.75<span class="mark">*</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Noise added</th>
+              <td class="rate" style="--r:.45">4.50</td>
+              <td class="rate" style="--r:.525">5.25</td>
+              <td class="rate rate-l1" style="--r:.60">6.00</td>
+            </tr>
+            <tr>
+              <th scope="row">Predicted shuffled</th>
+              <td class="rate" style="--r:.45">4.50</td>
+              <td class="rate" style="--r:.475">4.75</td>
+              <td class="rate rate-l1" style="--r:.60">6.00</td>
+            </tr>
+            <tr>
+              <th scope="row">Bias added</th>
+              <td class="rate" style="--r:.45">4.50</td>
+              <td class="rate" style="--r:.45">4.50</td>
+              <td class="rate rate-l1" style="--r:.60">6.00</td>
+            </tr>
+            <tr>
+              <th scope="row">Sign flipped</th>
+              <td class="rate" style="--r:.45">4.50</td>
+              <td class="rate" style="--r:.45">4.50</td>
+              <td class="rate rate-l1" style="--r:.60">6.00</td>
+            </tr>
+            <tr>
+              <th scope="row">History shift</th>
+              <td class="rate" style="--r:.45">4.50</td>
+              <td class="rate" style="--r:.40">4.00</td>
+              <td class="rate rate-l1" style="--r:.60">6.00</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="caption">Rejection rate at alpha 0.05. 400 replicates per row. Single-tuning column shown; the 24 cells include per-arm and lambda=1. <span class="mark">*</span> p = 0.0011 against no inflation; every other cell p &gt; 0.05.</p>
+      </div>
+
+      <aside class="callout">
+        <p class="callout-big">24 / 24</p>
+        <p class="callout-line">prediction-powered cells held alpha.</p>
+        <p class="callout-small">Highest PPI cell: 6.75%, p = 0.073.</p>
+        <p class="callout-small">L1 lasso: 8.75%, p = 0.0011.</p>
+      </aside>
+    </div>
+
+    <div class="width-block">
+      <div class="width-head">
+        <h3>Interval width relative to unadjusted</h3>
+        <p>PPI++ single-tuning. Lower is narrower. 400 paired replicates each.</p>
+      </div>
+
+      <div class="width-chart" role="img" aria-label="Interval width ratios: good score 0.8469, bias added 0.8469, sign flipped 0.8469, history shift 0.9053, poorly estimated 0.9183, noise added 0.9701, weak score 0.9838, predictions shuffled 0.9984.">
+        <div class="width-row">
+          <span class="width-label">Good score</span>
+          <span class="width-track"><span class="width-bar" style="--w:84.69%"></span></span>
+          <span class="width-value">0.847</span>
+        </div>
+        <div class="width-row">
+          <span class="width-label">Bias added</span>
+          <span class="width-track"><span class="width-bar" style="--w:84.69%"></span></span>
+          <span class="width-value">0.847</span>
+        </div>
+        <div class="width-row">
+          <span class="width-label">Sign flipped</span>
+          <span class="width-track"><span class="width-bar" style="--w:84.69%"></span></span>
+          <span class="width-value">0.847</span>
+        </div>
+        <div class="width-row">
+          <span class="width-label">History shift</span>
+          <span class="width-track"><span class="width-bar" style="--w:90.53%"></span></span>
+          <span class="width-value">0.905</span>
+        </div>
+        <div class="width-row">
+          <span class="width-label">Poorly estimated</span>
+          <span class="width-track"><span class="width-bar" style="--w:91.83%"></span></span>
+          <span class="width-value">0.918</span>
+        </div>
+        <div class="width-row">
+          <span class="width-label">Noise added</span>
+          <span class="width-track"><span class="width-bar" style="--w:97.01%"></span></span>
+          <span class="width-value">0.970</span>
+        </div>
+        <div class="width-row">
+          <span class="width-label">Weak score</span>
+          <span class="width-track"><span class="width-bar" style="--w:98.38%"></span></span>
+          <span class="width-value">0.984</span>
+        </div>
+        <div class="width-row">
+          <span class="width-label">Predictions shuffled</span>
+          <span class="width-track"><span class="width-bar" style="--w:99.84%"></span></span>
+          <span class="width-value">0.998</span>
+        </div>
+        <div class="width-axis" aria-hidden="true">
+          <span>0</span><span>0.5</span><span>1.0</span>
+        </div>
+      </div>
+      <p class="caption margin-top">A shuffled score gives up and falls back to the unadjusted analysis. History shift costs part of the gain.</p>
+    </div>
+  </section>
+
+  <section class="wrap section" aria-labelledby="trial-title">
+    <div class="section-head">
+      <h2 id="trial-title">ACTG 175</h2>
+      <p class="section-note">527 patients / CD4 at week 20 / one split</p>
+    </div>
+
+    <div class="two-col">
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption class="visually-hidden">Treatment effect estimates, intervals and widths on ACTG 175</caption>
+          <thead>
+            <tr>
+              <th scope="col">Method</th>
+              <th scope="col">Estimate</th>
+              <th scope="col">95% interval</th>
+              <th scope="col">Width</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Unadjusted</th>
+              <td>65.73</td>
+              <td>40.22 to 91.24</td>
+              <td>51.02</td>
+            </tr>
+            <tr>
+              <th scope="row">L1 lasso</th>
+              <td>65.72</td>
+              <td>45.53 to 85.90</td>
+              <td>40.37</td>
+            </tr>
+            <tr class="primary-row">
+              <th scope="row">Group-lasso PPI++</th>
+              <td>66.89</td>
+              <td>45.90 to 87.89</td>
+              <td>41.99</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="neg-control">
+        <h3>Negative control</h3>
+        <p class="neg-sub">1,000 permuted labels</p>
+        <div class="neg-row">
+          <span>Unadjusted</span>
+          <span class="neg-track"><span class="neg-bar" style="--w:85%"></span></span>
+          <b>5.1%</b>
+        </div>
+        <div class="neg-row">
+          <span>Adjusted</span>
+          <span class="neg-track"><span class="neg-bar" style="--w:66.7%"></span></span>
+          <b>4.0%</b>
+        </div>
+        <div class="neg-row">
+          <span>Corrupted</span>
+          <span class="neg-track"><span class="neg-bar" style="--w:85%"></span></span>
+          <b>5.1%</b>
+        </div>
+        <p class="neg-note">All three are consistent with alpha 0.05.</p>
+      </div>
+    </div>
+
+    <p class="trial-note"><strong>The L1 lasso is narrower here, and it is the method that fails the null sweep.</strong> It selects covariates on the same patients it estimates on. The adjusted row uses a score fitted on held-out ACTG controls, not the TCGA expression score.</p>
+  </section>
+
+  <section class="wrap section" aria-labelledby="expression-title">
+    <div class="section-head">
+      <h2 id="expression-title">TCGA-BRCA</h2>
+      <p class="section-note">780 ER-labelled samples / 5-fold / 20,227 genes</p>
+    </div>
+
+    <div class="two-col expression">
+      <div class="auc">
+        <div class="auc-track">
+          <span class="auc-mark" style="left:33.7%"><b>0.9337</b></span>
+          <span class="auc-mark auc-mark-primary" style="left:55.1%"><b>0.9551</b></span>
+        </div>
+        <div class="auc-axis" aria-hidden="true">
+          <span>0.90</span><span>0.95</span><span>1.00</span>
+        </div>
+        <div class="auc-legend">
+          <span><i class="dot"></i>L2 logistic</span>
+          <span><i class="dot dot-primary"></i>ppict group lasso</span>
+        </div>
+      </div>
+
+      <div class="expression-facts">
+        <p><b>83</b> genes in the final fit</p>
+        <p><b>ESR1, PGR, FOXA1</b> among the strongest</p>
+        <p><b>0</b> shared patients with the trial</p>
+        <p><b>0</b> expression columns in ACTG 175</p>
+      </div>
+    </div>
+
+    <p class="caption">The expression score is real and external. It is not transported: the trial has no expression data and the outcomes are on different scales.</p>
+  </section>
+
+  <section class="wrap section" aria-labelledby="calculator-title">
+    <div class="section-head">
+      <h2 id="calculator-title">What the calculator returns</h2>
+      <p class="section-note">Simulated 720-patient file / 80% power / $4,200 per patient</p>
+    </div>
+
+    <div class="output-grid">
+      <div class="output">
+        <span class="output-value">16.7%</span>
+        <span class="output-label">interval narrowing</span>
+      </div>
+      <div class="output">
+        <span class="output-value">264</span>
+        <span class="output-label">fewer patients</span>
+      </div>
+      <div class="output">
+        <span class="output-value">$1.11M</span>
+        <span class="output-label">trial cost avoided</span>
+      </div>
+      <div class="output">
+        <span class="output-value">10.6</span>
+        <span class="output-label">months saved</span>
+      </div>
+    </div>
+
+    <div class="calculator-foot">
+      <div>
+        <p>App, CLI and API agree to <b>0.0</b> on identical input. Cost and time are projections, not observed savings.</p>
+        <p class="checks">101 Python tests / 4 R test files / 460 parity values, max difference 7.4e-9 / R CMD check OK.</p>
+      </div>
+      <p class="downloads">
+        <a href="assets/evidence/sap_appendix.pdf">SAP appendix, PDF</a>
+        <a href="assets/evidence/sap_appendix.tex">LaTeX source</a>
+        <a href="https://github.com/nepalanurag/ppict#the-calculator">Run it locally</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="wrap section limits" aria-labelledby="limits-title">
+    <div class="section-head">
+      <h2 id="limits-title">What this does not show</h2>
+    </div>
+    <ul>
+      <li>One ACTG split. No split-to-split interval.</li>
+      <li>The trial score is internal. The TCGA score is external but cannot be applied.</li>
+      <li>The external-cohort PPI term is a simulation result.</li>
+      <li>Continuous outcomes and additive effects only.</li>
+      <li>Cost and recruitment time are model projections.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="wrap footer">
+  <div>
+    <p class="footer-mark">ppict</p>
+    <p>Prediction-powered covariate adjustment for randomized trials.</p>
+  </div>
+  <div class="footer-links">
+    <a href="https://github.com/nepalanurag/ppict/blob/main/validation/results/NULL_REPORT.md">Null sweep</a>
+    <a href="https://github.com/nepalanurag/ppict/blob/main/validation/results/REAL_DATA_REPORT.md">Real data</a>
+    <a href="https://github.com/nepalanurag/ppict/blob/main/validation/results/R_PARITY.md">R parity</a>
+    <a href="https://github.com/nepalanurag/ppict">Source</a>
+    <a href="https://github.com/nepalanurag/ppict/blob/main/LICENSE">MIT</a>
+  </div>
+  <p class="footer-note">Static evidence sheet. The calculator runs locally with Python. No patient data is redistributed.</p>
+</footer>
+
+</body>
+</html>
