@@ -1,0 +1,42 @@
+null sweep: 8 scenarios x 400 replicates on 9 worker(s)
+  good_score: 400 replicates in 165.6s
+  weak_score: 400 replicates in 154.5s
+  poorly_estimated_score: 400 replicates in 371.0s
+  corrupt_noise: 400 replicates in 174.8s
+  corrupt_shuffle: 400 replicates in 190.6s
+  corrupt_bias: 400 replicates in 201.1s
+  corrupt_flip: 400 replicates in 189.4s
+  history_shift: 400 replicates in 290.9s
+/Users/anurag/Downloads/biostats-project/src/ppict/simulate.py:462: RuntimeWarning: Mean of empty slice
+  "mean_lam": float(np.nanmean(g["lam"].to_numpy(dtype=float))),
+wrote validation/results/null_replicates.csv (22400 rows)
+wrote validation/results/null_summary.csv (56 rows)
+wrote validation/results/null_width_ratios.csv
+wrote validation/results/NULL_REPORT.md
+git: None
+
+                config      method  reject_rate  coverage  mean_ci_width  mean_lam
+          corrupt_bias ppi_per_arm       0.0450    0.9550       0.463842  0.711973
+          corrupt_bias  ppi_single       0.0450    0.9550       0.458668  0.942458
+          corrupt_bias  unadjusted       0.0450    0.9550       0.541612       NaN
+          corrupt_flip ppi_per_arm       0.0450    0.9550       0.541612  0.000000
+          corrupt_flip  ppi_single       0.0450    0.9550       0.458668 -0.942458
+          corrupt_flip  unadjusted       0.0450    0.9550       0.541612       NaN
+         corrupt_noise ppi_per_arm       0.0500    0.9500       0.525933  0.143442
+         corrupt_noise  ppi_single       0.0525    0.9475       0.525425  0.188346
+         corrupt_noise  unadjusted       0.0450    0.9550       0.541612       NaN
+       corrupt_shuffle ppi_per_arm       0.0500    0.9500       0.540887  0.043257
+       corrupt_shuffle  ppi_single       0.0475    0.9525       0.540772  0.002589
+       corrupt_shuffle  unadjusted       0.0450    0.9550       0.541612       NaN
+            good_score ppi_per_arm       0.0475    0.9525       0.463735  0.714626
+            good_score  ppi_single       0.0450    0.9550       0.458668  0.942458
+            good_score  unadjusted       0.0450    0.9550       0.541612       NaN
+         history_shift ppi_per_arm       0.0400    0.9600       0.493201  0.676216
+         history_shift  ppi_single       0.0400    0.9600       0.490334  0.890091
+         history_shift  unadjusted       0.0450    0.9550       0.541612       NaN
+poorly_estimated_score ppi_per_arm       0.0600    0.9400       0.499159  0.489757
+poorly_estimated_score  ppi_single       0.0675    0.9325       0.496783  0.643812
+poorly_estimated_score  unadjusted       0.0625    0.9375       0.540970       NaN
+            weak_score ppi_per_arm       0.0425    0.9575       0.456918  0.452976
+            weak_score  ppi_single       0.0425    0.9575       0.456905  0.591703
+            weak_score  unadjusted       0.0500    0.9500       0.464428       NaN

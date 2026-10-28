@@ -1,0 +1,20 @@
+Package: ppict
+Type: Package
+Title: Prediction-Powered Inference with a Group-Lasso Prognostic Score
+Version: 0.1.0
+Authors@R: person("Anurag", "Nepal", email = "noreply@example.com",
+    role = c("aut", "cre"))
+Author: Anurag Nepal [aut, cre]
+Maintainer: Anurag Nepal <noreply@example.com>
+Description: A local R port of the Python ppict package. It implements the
+    permutation-assisted group-lasso selector, the prognostic score, the
+    shared-tuning PPI++ treatment-effect estimator and interval, and a
+    dataset-in, estimate-and-interval-out analysis entry point. The port is
+    checked numerically against the Python package on shared fixtures. The
+    simulation sweep and the calculator are not part of this package.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports:
+    stats,
+    utils
+RoxygenNote: 7.3.2

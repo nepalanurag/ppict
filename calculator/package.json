@@ -1,0 +1,22 @@
+{
+  "name": "ppict-calculator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local calculator for prediction-powered covariate adjustment in randomized trials. Calls the ppict Python estimator.",
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1 --port 3040",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1 --port 3040"
+  },
+  "dependencies": {
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}

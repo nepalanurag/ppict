@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.pytest_cache/
+
+# Local environment
+.DS_Store
+
+# Downloaded real data (not redistributed, fetched by validation scripts)
+validation/data/*.gz
+validation/data/*.tsv
+validation/data/*.csv
+validation/data/*.txt
+
+# Generated results.
+# The large per-replicate file is regenerable and is not tracked. The small
+# summary, width-ratio and run-log artifacts ARE tracked, because the results
+# report references them and a reader should not have to re-run a 30 minute sweep
+# to see the rows the README quotes.
+validation/results/*_replicates.csv
+validation/results/*.tex
+# The sample SAP export is a deliverable, not a scratch file.
+!validation/results/sap_appendix.tex
+
+# R package local library and check output
+r/lib/
+*.Rcheck/
+
+# Calculator
+calculator/node_modules/
+calculator/.next/
+calculator/out/
+*.tsbuildinfo

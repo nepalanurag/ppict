@@ -1,0 +1,163 @@
+{
+  "passed": true,
+  "tolerance": 1e-06,
+  "values": 460,
+  "max_abs_diff": 7.4165319441377164e-09,
+  "checks": [
+    {
+      "check": "analysis",
+      "values": 23,
+      "numeric": 21,
+      "max_abs_diff": 1.2212453270876722e-15,
+      "passed": true
+    },
+    {
+      "check": "ate",
+      "values": 15,
+      "numeric": 13,
+      "max_abs_diff": 6.938893903907228e-16,
+      "passed": true
+    },
+    {
+      "check": "calibration",
+      "values": 7,
+      "numeric": 7,
+      "max_abs_diff": 0.0,
+      "passed": true
+    },
+    {
+      "check": "crossfit",
+      "values": 142,
+      "numeric": 142,
+      "max_abs_diff": 1.0658141036401503e-14,
+      "passed": true
+    },
+    {
+      "check": "groups",
+      "values": 6,
+      "numeric": 1,
+      "max_abs_diff": 0.0,
+      "passed": true
+    },
+    {
+      "check": "null_counts",
+      "values": 48,
+      "numeric": 48,
+      "max_abs_diff": 0.0,
+      "passed": true
+    },
+    {
+      "check": "ppi_mean",
+      "values": 5,
+      "numeric": 5,
+      "max_abs_diff": 1.249000902703301e-16,
+      "passed": true
+    },
+    {
+      "check": "procova",
+      "values": 44,
+      "numeric": 44,
+      "max_abs_diff": 7.4165319441377164e-09,
+      "passed": true
+    },
+    {
+      "check": "prognostic",
+      "values": 66,
+      "numeric": 65,
+      "max_abs_diff": 3.552713678800501e-15,
+      "passed": true
+    },
+    {
+      "check": "screen",
+      "values": 15,
+      "numeric": 14,
+      "max_abs_diff": 2.7755575615628914e-16,
+      "passed": true
+    },
+    {
+      "check": "solver",
+      "values": 84,
+      "numeric": 84,
+      "max_abs_diff": 5.329070518200751e-15,
+      "passed": true
+    },
+    {
+      "check": "weights",
+      "values": 5,
+      "numeric": 5,
+      "max_abs_diff": 4.440892098500626e-16,
+      "passed": true
+    }
+  ],
+  "r_version": "R version 4.5.1 (2025-06-13)",
+  "fixtures": [
+    {
+      "name": "analysis_trial.csv",
+      "sha256": "9b81159e94ba2283190ece4948b1481d32b19f2e5f4e369e73d1d17a50d50a6b"
+    },
+    {
+      "name": "group_X.csv",
+      "sha256": "044640752fa42f380c8c017b54474fa5434bc34ea5263b54229cce1e590e2225"
+    },
+    {
+      "name": "group_groups.csv",
+      "sha256": "f801002a8da9a95927e55f62ff816585dffcde0baec023772efdfb01a6a0c215"
+    },
+    {
+      "name": "group_lam_grid.csv",
+      "sha256": "3b58ed3db9efc1a92ba0d17d25457635ca23d0994bc38308cce81c053e05dc27"
+    },
+    {
+      "name": "group_permutations.csv",
+      "sha256": "dd9aad7175f4ed799cc1d37605bef6fa7047406bdd5f58075ff23d7ea3448cab"
+    },
+    {
+      "name": "group_y.csv",
+      "sha256": "3e53b7132c796c52658845895f9b3297c19cf7086cdb571d3e60647f9bb34fe8"
+    },
+    {
+      "name": "ppi_f.csv",
+      "sha256": "afbdbe5e44f66fb8896b98acf66b6f0a4ab769c10e5e748dcb482fb733fc6d65"
+    },
+    {
+      "name": "ppi_f_unlabeled.csv",
+      "sha256": "cc00a456a601c88f3aa6810180de79325e54aeacafff3a7924f3dd9bb46a466d"
+    },
+    {
+      "name": "ppi_t.csv",
+      "sha256": "4f0d8cc29293a5be082f371291dfb0fc24f801893e4bb479e92ae436e8f22a92"
+    },
+    {
+      "name": "ppi_y.csv",
+      "sha256": "0ac7cabfe8d972497bdad689418efa1795c89e00003a8047a8c202fd90e04574"
+    },
+    {
+      "name": "procova_cases.csv",
+      "sha256": "afaee78a429edfc4486f6d6c0859ef36834333d64e967d472b92f0f17d1b5692"
+    },
+    {
+      "name": "prognostic_X.csv",
+      "sha256": "187b4e2ffe0f18adfcba906dd994261ef6efff90dd92f3286e74a7fc53cc25cd"
+    },
+    {
+      "name": "prognostic_Xval.csv",
+      "sha256": "4d697f2f9348a43146835d97afaeacc8e1f66ff0f90220b553606bd02e05bf5a"
+    },
+    {
+      "name": "prognostic_folds.csv",
+      "sha256": "1930a11facaf6cfb9ca36b63a36813e293d64834a5a5fee26be0ff32f5aa33b2"
+    },
+    {
+      "name": "prognostic_groups.csv",
+      "sha256": "ff34e9e1beb3f2d6055d94b74036916cfd0720534aa0de8848c0aa0ac8fc1f33"
+    },
+    {
+      "name": "prognostic_y.csv",
+      "sha256": "74ed05adba71d6f5c3cc8921fedd3abaafe2704e969597df051622740c8c9a38"
+    },
+    {
+      "name": "prognostic_yval.csv",
+      "sha256": "c2edd45f17e536ed4f0839a4e528f05786bce108732dec001e284af3462480c7"
+    }
+  ]
+}

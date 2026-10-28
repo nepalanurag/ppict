@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ppict"
+version = "0.1.0"
+description = "Prediction-powered covariate adjustment for randomized clinical trials, with permutation-assisted group lasso prognostic scores"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.23",
+    "scipy>=1.9",
+    "scikit-learn>=1.1",
+    "pandas>=1.5",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7",
+    # Reference implementation by the PPI authors, used only as an independent
+    # check inside the test suite.  Deliberately not a runtime dependency.
+    "ppi-python>=0.2.3",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# Every RuntimeWarning is fatal except the four "... in matmul" messages.
+#
+# Reason, verified on this machine and recorded in the README: the numpy build
+# here links Apple Accelerate for BLAS, and that backend raises spurious
+# floating-point flags on every matmul. A matmul of two all-finite arrays with an
+# all-finite result still reports "divide by zero", "invalid value" and
+# "overflow" encountered in matmul. A matmul does not divide, so "divide by zero
+# in matmul" cannot be a genuine signal. The filter is deliberately scoped to the
+# matmul ufunc rather than to RuntimeWarning as a class.
+filterwarnings = [
+    "error::RuntimeWarning",
+    "ignore:divide by zero encountered in matmul:RuntimeWarning",
+    "ignore:invalid value encountered in matmul:RuntimeWarning",
+    "ignore:overflow encountered in matmul:RuntimeWarning",
+    "ignore:underflow encountered in matmul:RuntimeWarning",
+]
